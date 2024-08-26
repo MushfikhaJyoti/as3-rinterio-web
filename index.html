@@ -20,18 +20,21 @@
 
 <!-- customize cls CDN  -->
 <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          backgroundimage: {
+            paperbg: "url('./assets/bg.png')"
           }
         }
       }
     }
-  </script>
+  }
+</script>
   <!--fontawsome CDN  -->
-<script src="https://kit.fontawesome.com/82059bdbe7.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/82059bdbe7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Header Section  -->
@@ -82,11 +85,11 @@
         <img src="assets/banner.png" class="w-11/12" alt="">
        </div>
        <!-- text Box -->
-    <div class="container w-full lg:w-2/4  mx-auto">
+      <div class="container w-full lg:w-11/12 mx-auto">
       <h1 class="text-6xl font-extrabold text-center mb-5">A barn house of this design has a striking appearance</h1>
       <p class="text-base text-center mb-5 text-slate-950 w-11/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
 
-      <div class="flex justify-center justify-items-center"><a class="btn bg-[#c0f781fb] rounded-full  w-full text-xl font-bold text-center mb-5">View Details<i class="fa-duotone fa-solid fa-arrow-right w-8 h-8 -rotate-45 text-black text-lg inline-flex rounded-full justify-center items-center bg-[#ABEF5F]"></i> </a></div>
+      <div class="flex justify-center justify-items-center"><a class="btn bg-[#c0f781fb] rounded-full  w-full lg:w-auto text-xl font-bold text-center mb-5">View Details<i class="fa-duotone fa-solid fa-arrow-right w-8 h-8 -rotate-45 text-black text-lg inline-flex rounded-full justify-center items-center bg-[#ABEF5F]"></i> </a></div>
           </div>
        
     </header>
@@ -94,11 +97,11 @@
      <main>
       <!-- About us Section -->
        <div class="bg-gray-200">
-        <div class="container lg:w-11/12 mx-auto flex flex-col lg:flex-row justify-center items-center gap-10">
+        <div class="container lg:w-11/12 mx-auto flex flex-1 flex-col lg:flex-row justify-center items-center gap-10">
           <!-- Text Box -->
            <div class="lg:my-20 container w-11/12 lg:w-2/5 mx-auto relative">
             <div class="hidden md:block">
-              <img src="assets/Vector.png" class="w-28 h-24 p-2 absolute -left-14 -top-20 m-2 border-dashed border-2 border-gray-400 border-dott" alt="">
+              <img src="assets/Vector.png" class="w-28 h-20 p-2 absolute -left-14 -top-14 m-2 border-dashed border-2 border-gray-400 border-dott" alt="">
             </div>  
               <button class=" bg-white rounded-full px-4 py-2 mt-5 mb-5"><i class="fa-duotone fa-solid fa-arrow-right"></i> About Us</button> 
               <h2 class="text-4xl font-bold mb-5"> We design thoughtful, liveable spaces</h2>
@@ -117,7 +120,7 @@
               <img src="assets/residential.png" alt="">
               <div> <h3 class="text-xl font-bold mb-2">Residential</h3>
                 <p> The barn house captivates with its blend of rustic charm and modern</p>
-              </div>
+              </div>                
                  </div>
            </div>
 
@@ -138,7 +141,7 @@
          </div>
 
          <!-- card box -->
-          <div class="container lg:w-11/12 mx-auto pb-10 flex flex-col lg:flex-row grid-cols-4 gap-6">
+          <div class="container lg:w-11/12 mx-auto pb-20 flex flex-col lg:flex-row grid-cols-4 gap-6">
             <!-- first card -->
              <div class="w-11/12 lg:w-3/12 max-h-full container mx-auto bg-[#e7c1d3] p-5  rounded-xl">
               <img src="assets/concept.png" class="mb-2" alt="">
@@ -213,6 +216,37 @@
             
            </div>
 
+       </div>
+
+      <!-- Project Input section -->
+       <div class="bg-cover bg-no-repeat" style="background-image: url(./assets/bg.jpg);">
+       
+        <!-- text heading -->
+        <div class="text-center container w-11/12 lg:w-5/12 mx-auto pt-20">
+          <button class=" bg-[#eefcdf] rounded-full font-bold px-4 py-2 mt-5 mb-5"><i class="fa-duotone fa-solid fa-arrow-right pr-2"></i>Let's Connect</button>
+          <h2 class="text-4xl font-bold mb-5 text-center">Let’s Discuss Next Project</h2>
+          <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+             </div>
+
+      <!-- Input Box -->
+       <div class="text-center container w-11/12 lg:w-5/12 mx-auto pt-10">
+        <!-- 2row input -->
+         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5">
+          <input type="text" name="" id="" placeholder="First Name*" class="rounded-full p-4" >
+          <input type="text" name="" id="" placeholder="Last Name*" class="rounded-full p-4" >
+          <input type="text" name="" id="" placeholder="Phone Number*" class="rounded-full p-4" >
+          <input type="text" name="" id="" placeholder="Email Number*" class="rounded-full p-4" >
+         </div>
+        <!-- 1 input -->
+         <div class="relative">
+          <input type="text" name="" id="" placeholder="Write Your Message here" class=" rounded-[32px] p-5 h-52 w-[98%] lg:w-full mb-6" >
+         </div>
+         <div class="flex justify-center justify-items-center pb-10">
+          <a class="btn bg-[#ABEF5F] rounded-full w-full text-center text-xl font-bold">Send Mail <i class="fa-duotone fa-solid fa-arrow-right w-7 h-7 -rotate-45 text-white text-lg inline-flex rounded-full justify-center items-center bg-black "></i> </a>
+         </div>
+         
+
+       </div>
        </div>
 
 
